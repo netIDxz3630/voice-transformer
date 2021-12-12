@@ -280,8 +280,6 @@ class View(Tk.Tk):
         self.app.change_mode(mode)
 
     def stop_play(self):
-        plt.ioff()
-        plt.close()
         if self.save_file.get():
             self.status.set('File Saved')
         else:

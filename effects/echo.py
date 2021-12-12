@@ -1,9 +1,9 @@
 from effects.effect import Effect
 
 class EchoEffect(Effect):
-    def __init__(self, rate, block_len, delay):
+    def __init__(self, rate, block_len):
         super().__init__(rate, block_len)
-        self.change_delay(delay)
+        self.change_delay(0.1)
 
     def apply(self, view, input_tuple):
 

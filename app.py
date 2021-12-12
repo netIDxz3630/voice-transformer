@@ -29,7 +29,7 @@ class App:
     
     def set_rate(self, rate):
         self.rate = rate
-        self.echo_effect = EchoEffect(rate, self.block_len, 0.05)
+        self.echo_effect = EchoEffect(rate, self.block_len)
         self.vibrato_effect = VibratoEffect(rate, self.block_len)
 
     def update_io(self):
